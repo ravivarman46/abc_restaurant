@@ -7,7 +7,7 @@
     color: #e0e0e0;
     background-color: #1b1b1b;
     min-height: 100vh;
-    background-image: url(../../images/agllery8.jpg);
+  
   }
   
   .gallery-container h2 {
@@ -23,6 +23,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
+    padding-top: 100px;
   }
   
   /* Gallery item styling */

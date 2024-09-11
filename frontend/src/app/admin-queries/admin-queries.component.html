@@ -1,0 +1,56 @@
+<div class="admin-container">
+  <h1><i class="fas fa-tasks"></i> Manage Customer Queries</h1>
+
+  <!-- Success/Error Message -->
+  <div *ngIf="message" class="message">{{ message }}</div>
+
+  <!-- List all queries -->
+  <div *ngIf="queries.length > 0">
+    <table>
+      <thead>
+        <tr>
+          <th><i class="fas fa-id-badge"></i> ID</th>
+          <th><i class="fas fa-user"></i> Name</th>
+          <th><i class="fas fa-envelope"></i> Email</th>
+          <th><i class="fas fa-phone"></i> Phone</th>
+          <th><i class="fas fa-comment-dots"></i> Message</th>
+          <th><i class="fas fa-tools"></i> Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let query of queries">
+          <td>{{ query.id }}</td>
+          <td>{{ query.name }}</td>
+          <td>{{ query.email }}</td>
+          <td>{{ query.phone }}</td>
+          <td>{{ query.message }}</td>
+          <td>
+            <button (click)="editQuery(query)" class="action-btn"><i class="fas fa-edit"></i> Edit</button>
+            <button (click)="deleteQuery(query.id)" class="action-btn delete"><i class="fas fa-trash-alt"></i> Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Edit Query Form -->
+  <div *ngIf="selectedQuery" class="edit-form">
+    <h2><i class="fas fa-edit"></i> Edit Query</h2>
+    <form (ngSubmit)="updateQuery()">
+      <label for="name"><i class="fas fa-user"></i> Name:</label>
+      <input type="text" [(ngModel)]="selectedQuery.name" name="name" required />
+
+      <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+      <input type="email" [(ngModel)]="selectedQuery.email" name="email" required />
+
+      <label for="phone"><i class="fas fa-phone"></i> Phone:</label>
+      <input type="tel" [(ngModel)]="selectedQuery.phone" name="phone" required />
+
+      <label for="message"><i class="fas fa-comments"></i> Message:</label>
+      <textarea [(ngModel)]="selectedQuery.message" name="message" required></textarea>
+
+      <button type="submit" class="action-btn"><i class="fas fa-check-circle"></i> Update</button>
+      <button type="button" (click)="clearSelection()" class="action-btn cancel"><i class="fas fa-times-circle"></i> Cancel</button>
+    </form>
+  </div>
+</div>

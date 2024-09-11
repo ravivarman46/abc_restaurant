@@ -1,0 +1,32 @@
+<div class="register-container" style="background-image: url('/assets/images1.jpg');">
+  <form (ngSubmit)="onRegister(registerForm)" #registerForm="ngForm" class="register-form">
+    <h2>Register</h2>
+
+    <div class="form-group">
+      <label for="email"><i class="fas fa-envelope"></i> Email</label>
+      <input type="email" id="email" name="email" ngModel required>
+    </div>
+
+    <div class="form-group">
+      <label for="password"><i class="fas fa-lock"></i> Password</label>
+      <input type="password" id="password" name="password" ngModel required>
+    </div>
+
+    <div class="form-group">
+      <label for="role"><i class="fas fa-user"></i> Role</label><br>
+      <select id="role" name="role" ngModel required>
+        <option value="" disabled selected>Select your role</option>
+        <option value="customer">Customer</option>
+        <option value="staff">Staff</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+
+    <button type="submit" [disabled]="!registerForm.valid">Register</button>
+
+    <!-- Error message if registration fails -->
+    <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+
+    <a routerLink="/login">Already have an account? Login</a>
+  </form>
+</div>

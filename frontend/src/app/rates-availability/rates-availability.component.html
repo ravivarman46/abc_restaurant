@@ -1,0 +1,44 @@
+<div class="rates-availability">
+    <h2>Check Rates and Availability</h2>
+  
+    <form (ngSubmit)="checkAvailability()">
+      <div class="form-group">
+        <label for="date">
+          <i class="fas fa-calendar-alt"></i> Select Date:
+        </label>
+        <input type="date" id="date" [(ngModel)]="reservationDate" name="date" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="time">
+          <i class="fas fa-clock"></i> Select Time:
+        </label>
+        <input type="time" id="time" [(ngModel)]="reservationTime" name="time" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="guests">
+          <i class="fas fa-users"></i> Number of Guests:
+        </label>
+        <input type="number" id="guests" [(ngModel)]="guests" name="guests" required min="1" />
+      </div>
+  
+      <button type="submit" class="btn-check">
+        <i class="fas fa-search"></i> Check Availability
+      </button>
+    </form>
+  
+    <div *ngIf="availability" class="available-slots">
+      <h3><i class="fas fa-check-circle"></i> Available Slots</h3>
+      <ul>
+        <li *ngFor="let slot of availability">
+          Time: {{ slot.time }} - Rate: {{ slot.rate }} LKR
+        </li>
+      </ul>
+    </div>
+  
+    <div *ngIf="!availability && checked" class="no-availability">
+      <p><i class="fas fa-times-circle"></i> No availability for the selected date and time.</p>
+    </div>
+  </div>
+  

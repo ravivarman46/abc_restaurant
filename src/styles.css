@@ -1,0 +1,182 @@
+/* Body styling */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  background-image: url(/frontend/src/images/catring.jpg);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #333333; 
+}
+::-webkit-scrollbar-thumb {
+  background: #555555;
+  border-radius: 10px;
+}
+
+/* Navbar global styling */
+nav {
+  background-color: #1f1f1f;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+  transition: background-color 0.3s ease;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+nav:hover {
+  background-color: #ff4500; /* Hover effect for navbar background */
+}
+
+nav a {
+  color: #e0e0e0;
+  margin-right: 15px;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-flex;
+  align-items: center;
+}
+
+nav a i {
+  margin-right: 8px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover i {
+  transform: scale(1.2) rotate(10deg); /* Icon grows and rotates on hover */
+}
+
+nav a:hover {
+  color: #ff4500;
+  transform: translateY(-3px);
+  text-decoration: underline;
+}
+
+/* Buttons globally */
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #ff4500;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
+}
+
+button:hover {
+  background-color: #ff7043;
+  transform: scale(1.1) rotate(-3deg);
+  animation: pulse 1.5s infinite;
+}
+
+/* Background animation */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(135deg, #ff4500, #1e90ff, #6a0dad, #00bcd4);
+  background-size: 400% 400%;
+  animation: bgAnimation 15s ease infinite;
+  opacity: 0.2;
+}
+
+@keyframes bgAnimation {
+  0%, 100% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+}
+
+/* New pulse animation for buttons */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 69, 0, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 20px rgba(255, 69, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 69, 0, 0);
+  }
+}
+
+/* Floating icon animation */
+.icon {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon:hover {
+  transform: translateY(-10px) rotate(10deg);
+  color: #ff4500;
+}
+
+/* Bounce animation for elements */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.element-bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Footer global styling */
+footer {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #b3b3b3;
+}
+
+footer a {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ff4500;
+}
+
+/* Gradient background animation */
+body {
+  background: linear-gradient(-45deg, #121212, #1f1f1f, #333333, #000000);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

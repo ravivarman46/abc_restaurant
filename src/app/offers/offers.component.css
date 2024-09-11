@@ -1,0 +1,114 @@
+.offers-container {
+  width: 85%;
+  margin: 40px auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.offers-container h2 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #ff6347;
+  animation: slideIn 1s ease-in-out;
+}
+
+.offers-container p {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.offer-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  animation: cardAppear 1.2s ease forwards;
+  text-align: left;
+}
+
+.offer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.offer-card h3 {
+  font-size: 1.9rem;
+  color: #333;
+  margin-bottom: 15px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.offer-card p {
+  font-size: 1.2rem;
+  color: #777;
+  animation: fadeIn 1.3s ease-in-out;
+}
+
+/* Icon Styling */
+.offer-icon {
+  font-size: 3rem;
+  color: #ff6347;
+  margin-bottom: 15px;
+  animation: fadeIn 1.5s ease-in-out;
+  display: block;
+}
+
+/* Adding subtle hover effect with shadow and animation */
+.offer-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional hover effects for offer title */
+.offer-card h3:hover {
+  color: #ff6347;
+  transition: color 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes cardAppear {
+  from {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}

@@ -1,0 +1,58 @@
+<div class="queries-container">
+    <h2><i class="fas fa-tasks"></i> Manage Queries</h2>
+  
+    <table class="queries-table">
+      <thead>
+        <tr>
+          <th><i class="fas fa-user"></i> Name</th>
+          <th><i class="fas fa-envelope"></i> Email</th>
+          <th><i class="fas fa-phone"></i> Phone</th>
+          <th><i class="fas fa-comment"></i> Message</th>
+          <th><i class="fas fa-tools"></i> Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let query of queries">
+          <td>{{ query.name }}</td>
+          <td>{{ query.email }}</td>
+          <td>{{ query.phone }}</td>
+          <td>{{ query.message }}</td>
+          <td>
+            <button class="edit-btn" (click)="editQuery(query)">
+              <i class="fas fa-edit"></i> Edit
+            </button>
+            <button class="delete-btn" (click)="deleteQuery(query.id)">
+              <i class="fas fa-trash"></i> Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div *ngIf="editMode" class="edit-query-form">
+      <h3><i class="fas fa-edit"></i> Edit Query</h3>
+  
+      <label for="name"><i class="fas fa-user"></i> Name:</label>
+      <input [(ngModel)]="selectedQuery.name" id="name" />
+  
+      <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+      <input [(ngModel)]="selectedQuery.email" id="email" />
+  
+      <label for="phone"><i class="fas fa-phone"></i> Phone:</label>
+      <input [(ngModel)]="selectedQuery.phone" id="phone" />
+  
+      <label for="message"><i class="fas fa-comment"></i> Message:</label>
+      <textarea [(ngModel)]="selectedQuery.message" id="message"></textarea>
+  
+      <button class="update-btn" (click)="updateQuery()">
+        <i class="fas fa-save"></i> Update Query
+      </button>
+      <button class="cancel-btn" (click)="cancelEdit()">
+        <i class="fas fa-times"></i> Cancel
+      </button>
+    </div>
+  
+    <div *ngIf="responseMessage" class="response-message">
+      <i class="fas fa-check-circle"></i> {{ responseMessage }}
+    </div>
+</div>

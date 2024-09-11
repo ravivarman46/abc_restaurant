@@ -1,0 +1,139 @@
+/* Login Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('/assets/images1.jpg') no-repeat center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+/* Form Styling */
+.login-form {
+  background-color: #1b1b1b;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Form Title */
+.login-form h2 {
+  color: #ff4500;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.login-form label {
+  display: block;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+}
+
+.login-form input,
+.login-form select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  background-color: #333;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+  background-color: #444;
+  border-color: #ff4500;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff4500;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
+}
+
+button:hover {
+  background-color: #ff5733;
+  transform: scale(1.05);
+}
+
+/* Disabled button styling */
+button[disabled] {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+/* Links */
+.login-form a {
+  display: block;
+  margin-top: 20px;
+  color: #ff4500;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.login-form a:hover {
+  color: #ff7043;
+}
+
+/* Form Icons */
+.login-form i {
+  margin-right: 10px;
+  color: #ff4500;
+  transition: transform 0.3s ease;
+}
+
+.login-form label i {
+  font-size: 1.2rem;
+}
+
+.login-form button i {
+  margin-right: 10px;
+}
+
+.login-form a i {
+  margin-right: 5px;
+}
+
+.login-form i:hover {
+  transform: rotate(15deg);
+  color: #ff7043;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,85 @@
+/* Admin page styling */
+
+/* Container styling for the admin page */
+.admin-container {
+    padding: 50px;
+    text-align: center;
+    color: #e0e0e0;
+    background-color: #1b1b1b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Header styling */
+  .admin-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff4500;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Admin grid layout */
+  .admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Admin card styling */
+  .admin-card {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .admin-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Button styling */
+  .admin-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff4500;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .admin-btn:hover {
+    background-color: #ff5733;
+    transform: scale(1.05);
+  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .admin-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  

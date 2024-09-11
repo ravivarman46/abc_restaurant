@@ -1,11 +1,11 @@
 <div class="customer-services-container">
     <h2>Customer Services</h2>
   
-    <!-- Search Bar -->
+    
     <input type="text" placeholder="Search for services..." [(ngModel)]="searchQuery" class="search-bar" (input)="filterCustomerServices()" />
   
     <div class="customer-services-grid">
-      <!-- Dynamically displayed customer services -->
+      
       <div *ngFor="let service of filteredCustomerServices" class="customer-service-card" (click)="goToCustomerServiceDetails(service)">
         <i [class]="service.iconClass + ' service-icon'"></i>
         <h3>{{ service.title }}</h3>

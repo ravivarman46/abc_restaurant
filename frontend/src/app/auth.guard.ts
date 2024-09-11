@@ -10,13 +10,13 @@ export class AuthGuard implements CanActivate {
   constructor(private authService: AuthService, private router: Router) {}
 
   canActivate(route: any): boolean {
-    const userRole = this.authService.getUserRole();  // Get role from localStorage
+    const userRole = this.authService.getUserRole();  
     const expectedRole = route.data.role;
 
     if (userRole === expectedRole) {
       return true;
     } else {
-      this.router.navigate(['/login']);  // Redirect to login if not authorized
+      this.router.navigate(['/login']);  
       return false;
     }
   }

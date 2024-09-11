@@ -67,19 +67,19 @@
   display: block;
 }
 
-/* Adding subtle hover effect with shadow and animation */
+
 .offer-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Additional hover effects for offer title */
+
 .offer-card h3:hover {
   color: #ff6347;
   transition: color 0.3s ease;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   from {
       opacity: 0;

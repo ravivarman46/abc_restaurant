@@ -1,30 +1,30 @@
-/* General container styling */
+
 .profile-container {
     max-width: 800px;
     margin: 40px auto;
     padding: 30px;
-    background-color: #2c2c2c; /* Dark background */
+    background-color: #2c2c2c; 
     border-radius: 10px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     animation: fadeIn 1s ease-in;
-    color: #f5f5f5; /* Light text color */
+    color: #f5f5f5; 
 }
 
-/* Header styling */
+
 .profile-header {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Profile Icon Styling */
+
 .profile-icon {
-    font-size: 8rem; /* Large icon size for profile picture */
-    color: #007bff; /* Icon color */
+    font-size: 8rem;
+    color: #007bff; 
     margin-bottom: 10px;
     animation: bounceIn 1.5s ease;
 }
 
-/* Profile text */
+
 h3 {
     font-size: 1.8em;
     color: #fff;
@@ -35,7 +35,7 @@ h3 {
     color: #aaa;
 }
 
-/* Profile body */
+
 .profile-body {
     text-align: left;
 }
@@ -46,7 +46,7 @@ h3 {
     color: #bbb;
 }
 
-/* Profile details form */
+
 .profile-details label {
     display: block;
     font-size: 1.1em;
@@ -59,8 +59,8 @@ h3 {
     padding: 12px;
     margin-bottom: 15px;
     border: 1px solid #444;
-    background-color: #1e1e1e; /* Dark input background */
-    color: #fff; /* Light text color */
+    background-color: #1e1e1e; 
+    color: #fff; 
     border-radius: 5px;
     font-size: 1em;
     outline: none;
@@ -72,7 +72,7 @@ h3 {
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
 }
 
-/* Button styling */
+
 .customer-btn {
     display: inline-block;
     background-color: #007bff;
@@ -96,7 +96,7 @@ h3 {
     margin-top: 20px;
 }
 
-/* Response message */
+
 .response-message {
     margin-top: 20px;
     font-size: 1.2em;
@@ -104,7 +104,7 @@ h3 {
     text-align: center;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -127,9 +127,9 @@ h3 {
     }
 }
 
-/* Icon Styling */
+
 .profile-details label i {
     margin-right: 8px;
-    color: #007bff; /* Icon color */
+    color: #007bff; 
 }
 

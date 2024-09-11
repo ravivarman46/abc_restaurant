@@ -15,12 +15,12 @@ export class CheckoutComponent implements OnInit {
     const navigation = this.router.getCurrentNavigation();
     const state = navigation?.extras.state as { cart: any[], total: number };
 
-    // Initialize cart and total from the passed state
+    
     this.cart = state?.cart || [];
     this.total = state?.total || 0;
   }
 
   ngOnInit(): void {}
 
-  // Add more checkout logic if needed
+  
 }

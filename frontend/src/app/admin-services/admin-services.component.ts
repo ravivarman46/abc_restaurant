@@ -17,7 +17,7 @@ export class AdminServicesComponent implements OnInit {
     this.getAllServices();
   }
 
-  // Fetch all services
+  
   getAllServices() {
     this.http.get('http://localhost:5000/services')
       .subscribe(
@@ -30,12 +30,12 @@ export class AdminServicesComponent implements OnInit {
       );
   }
 
-  // Select a service for editing
+  
   editService(service: any) {
     this.selectedService = { ...service };
   }
 
-  // Add a new service
+
   addService(service: any) {
     this.http.post('http://localhost:5000/services', service)
       .subscribe(
@@ -50,7 +50,7 @@ export class AdminServicesComponent implements OnInit {
       );
   }
 
-  // Update an existing service
+ 
   updateService() {
     this.http.put(`http://localhost:5000/services/${this.selectedService.id}`, this.selectedService)
       .subscribe(
@@ -65,7 +65,7 @@ export class AdminServicesComponent implements OnInit {
       );
   }
 
-  // Delete a service
+  
   deleteService(serviceId: number) {
     this.http.delete(`http://localhost:5000/services/${serviceId}`)
       .subscribe(
@@ -79,7 +79,7 @@ export class AdminServicesComponent implements OnInit {
       );
   }
 
-  // Clear the form selection
+  
   clearSelection() {
     this.selectedService = null;
   }

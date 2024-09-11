@@ -7,25 +7,25 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./reservation.component.css']
 })
 export class ReservationComponent implements OnInit {
-  name: string = '';             // Customer Name
-  email: string = '';            // Customer Email
-  phone: string = '';            // Customer Phone
-  date: string = '';             // Reservation Date
-  time: string = '';             // Reservation Time
-  partySize: number = 1;         // Party Size
-  specialRequests: string = '';  // Special Requests
-  message: string = '';          // Success/Error Message
+  name: string = '';             
+  email: string = '';          
+  phone: string = '';            
+  date: string = '';             
+  time: string = '';             
+  partySize: number = 1;         
+  specialRequests: string = ''; 
+  message: string = '';          
 
-  reservations: any[] = [];      // All reservations
-  selectedReservation: any = null;  // Reservation selected for editing
+  reservations: any[] = [];     
+  selectedReservation: any = null; 
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.getAllReservations();  // Fetch reservations on component load
+    this.getAllReservations();  
   }
 
-  // Method to handle new reservation submission
+ 
   makeReservation() {
     const reservationData = {
       name: this.name,
@@ -35,18 +35,18 @@ export class ReservationComponent implements OnInit {
       time: this.time,
       partySize: this.partySize,
       specialRequests: this.specialRequests,
-      userId: 1 // Assuming a logged-in user with id=1
+      userId: 1 
     };
 
     if (this.selectedReservation) {
-      this.updateReservation();  // Update existing reservation
+      this.updateReservation();  
     } else {
       this.http.post('http://localhost:5000/reserve', reservationData)
         .subscribe(
           (response: any) => {
             this.message = 'Reservation successful!';
-            this.getAllReservations(); // Refresh reservations
-            this.clearForm();  // Clear form after success
+            this.getAllReservations(); 
+            this.clearForm();  
           },
           (error) => {
             this.message = 'Error occurred while making reservation.';
@@ -56,7 +56,7 @@ export class ReservationComponent implements OnInit {
     }
   }
 
-  // Method to fetch all reservations
+  
   getAllReservations() {
     this.http.get('http://localhost:5000/reservations')
       .subscribe(
@@ -69,7 +69,7 @@ export class ReservationComponent implements OnInit {
       );
   }
 
-  // Method to select a reservation for editing
+  
   editReservation(reservation: any) {
     this.selectedReservation = reservation;
     this.name = reservation.name;
@@ -81,7 +81,7 @@ export class ReservationComponent implements OnInit {
     this.specialRequests = reservation.special_requests;
   }
 
-  // Method to update an existing reservation
+  
   updateReservation() {
     const updatedReservationData = {
       name: this.name,
@@ -97,8 +97,8 @@ export class ReservationComponent implements OnInit {
       .subscribe(
         (response: any) => {
           this.message = 'Reservation updated successfully!';
-          this.getAllReservations(); // Refresh reservations
-          this.clearForm();  // Clear form after success
+          this.getAllReservations(); 
+          this.clearForm();  
         },
         (error) => {
           this.message = 'Error occurred while updating reservation.';
@@ -107,13 +107,13 @@ export class ReservationComponent implements OnInit {
       );
   }
 
-  // Method to delete a reservation
+ 
   deleteReservation(reservationId: number) {
     this.http.delete(`http://localhost:5000/reservations/${reservationId}`)
       .subscribe(
         (response: any) => {
           this.message = 'Reservation deleted successfully!';
-          this.getAllReservations(); // Refresh reservations
+          this.getAllReservations(); 
         },
         (error) => {
           this.message = 'Error occurred while deleting reservation.';
@@ -122,7 +122,7 @@ export class ReservationComponent implements OnInit {
       );
   }
 
-  // Clear the form and selection
+  
   clearForm() {
     this.name = '';
     this.email = '';
@@ -131,6 +131,6 @@ export class ReservationComponent implements OnInit {
     this.time = '';
     this.partySize = 1;
     this.specialRequests = '';
-    this.selectedReservation = null;  // Clear selection
+    this.selectedReservation = null;  
   }
 }

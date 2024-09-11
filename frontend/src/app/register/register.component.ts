@@ -17,7 +17,7 @@ export class RegisterComponent {
     if (form.valid) {
       this.registerService.register(form.value).subscribe({
         next: (response) => {
-          this.router.navigate(['/login']); // Redirect to login page after registration
+          this.router.navigate(['/login']); 
         },
         error: (error) => {
           this.errorMessage = 'Error: ' + error.message;

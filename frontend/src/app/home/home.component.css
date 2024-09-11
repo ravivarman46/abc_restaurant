@@ -1,4 +1,4 @@
-/* Full page background with dark theme and animated elements */
+
 .home-container {
     height: 100vh;
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('/app/images/gallery1.jpg'); /* Background image */
+    background-image: url('/app/images/gallery1.jpg');
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -15,7 +15,7 @@
     overflow: hidden;
   }
   
-  /* Header styling with animation */
+
   .header h1 {
     font-size: 4rem;
     margin: 0;
@@ -29,7 +29,7 @@
     animation: fadeIn 2.5s ease-out;
   }
   
-  /* Buttons styling with hover effect and animation */
+  
   .cta {
     margin-top: 30px;
     animation: bounce 3s infinite;
@@ -63,7 +63,7 @@
     box-shadow: 0 5px 15px rgba(30, 144, 255, 0.4);
   }
   
-  /* Keyframes for animations */
+ 
   @keyframes slideIn {
     from {
       transform: translateY(-50px);
@@ -93,7 +93,7 @@
     }
   }
   
-  /* Animated background elements */
+ 
   .home-container::before {
     content: '';
     position: absolute;

@@ -75,7 +75,7 @@
     margin-bottom: 20px;
   }
   
-  /* Icon Animations */
+  
   @keyframes pulse {
     0% {
       transform: scale(1);

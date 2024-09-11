@@ -1,6 +1,5 @@
-/* Styling the gallery page with dark theme, border effects, and hover animations */
 
-/* Container styles */
+
 .gallery-container {
   padding: 50px;
   text-align: center;
@@ -13,7 +12,7 @@
   position: relative; */
 }
 
-/* Title styling with fadeIn animation */
+
 .gallery-container h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
@@ -43,15 +42,15 @@
   }
 }
 
-/* Gallery grid layout */
+
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller images */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   gap: 20px;
   padding: 20px;
 }
 
-/* Gallery item styling */
+
 .gallery-item {
   overflow: hidden;
   position: relative;
@@ -61,24 +60,24 @@
 }
 
 .gallery-item:hover {
-  border-color: #ff4500; /* Glowing border on hover */
-  box-shadow: 0 10px 25px rgba(255, 69, 0, 0.7); /* Box shadow effect */
+  border-color: #ff4500; 
+  box-shadow: 0 10px 25px rgba(255, 69, 0, 0.7); 
 }
 
-/* Image styling */
+
 .gallery-item img {
   width: 100%;
   height: auto;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-/* Hover effect on gallery images */
+
 .gallery-item:hover img {
   transform: scale(1.1);
   opacity: 0.9;
 }
 
-/* Icon overlay for gallery items */
+
 .gallery-item .icon-overlay {
   position: absolute;
   top: 50%;
@@ -94,7 +93,7 @@
   opacity: 1;
 }
 
-/* Icon styling */
+
 .gallery-item .icon-overlay i {
   font-size: 2rem;
   color: #ffffff;
@@ -110,7 +109,7 @@
   background-color: rgba(255, 69, 0, 0.8);
 }
 
-/* Keyframes for fadeIn animation */
+
 @keyframes fadeIn {
   from {
       opacity: 0;
@@ -122,7 +121,7 @@
   }
 }
 
-/* New border animation */
+
 .gallery-item::before {
   content: '';
   position: absolute;
@@ -140,12 +139,12 @@
   box-shadow: 0 0 20px rgba(255, 69, 0, 0.8);
 }
 
-/* New hover pulse effect on image */
+
 .gallery-item img:hover {
   animation: pulse 1.5s infinite;
 }
 
-/* Pulse animation */
+
 @keyframes pulse {
   0% {
       transform: scale(1);

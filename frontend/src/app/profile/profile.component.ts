@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProfileService } from './profile.service'; // Import the service
+import { ProfileService } from './profile.service'; 
 
 @Component({
   selector: 'app-profile',

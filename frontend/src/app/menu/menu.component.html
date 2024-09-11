@@ -1,7 +1,7 @@
 <div class="menu-container">
   <h1><i class="fas fa-utensils"></i> Our Menu</h1>
 
-  <!-- Country filter buttons -->
+ 
   <div class="country-filters">
     <label *ngFor="let country of countries">
       <input type="radio" name="country" (click)="setCountry(country)" [checked]="selectedCountry === country" />
@@ -9,13 +9,13 @@
     </label>
   </div>
 
-  <!-- Search bar for filtering menu items -->
+  
   <div class="search-bar">
     <i class="fas fa-search"></i>
     <input type="text" placeholder="Search menu items..." [(ngModel)]="searchTerm" (input)="filterMenu()">
   </div>
 
-  <!-- Filter options -->
+ 
   <div class="filters">
     <label><i class="fas fa-leaf"></i> Veg
       <input type="checkbox" [(ngModel)]="filters.veg" (change)="filterMenu()">
@@ -34,12 +34,12 @@
     </label>
   </div>
 
-  <!-- Menu items list -->
+ 
   <div class="menu-items">
     <div class="menu-item" *ngFor="let item of filteredMenuItems">
       <img [src]="item.image" alt="Menu Item Image">
       <div class="item-details">
-        <!-- Dynamically show icons based on item type -->
+        
         <h3>
           <i class="fas" 
              [ngClass]="{

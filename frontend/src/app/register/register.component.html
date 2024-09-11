@@ -24,7 +24,7 @@
 
     <button type="submit" [disabled]="!registerForm.valid">Register</button>
 
-    <!-- Error message if registration fails -->
+  
     <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
 
     <a routerLink="/login">Already have an account? Login</a>

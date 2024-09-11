@@ -1,7 +1,7 @@
 <div class="reservations-container">
     <h2><i class="fas fa-calendar-alt"></i> Manage Reservations</h2>
   
-    <!-- Display all reservations in a table -->
+    
     <table class="reservations-table">
       <thead>
         <tr>
@@ -36,7 +36,7 @@
       </tbody>
     </table>
   
-    <!-- Form to edit the reservation -->
+    
     <div *ngIf="selectedReservation" class="edit-reservation-form">
       <h3><i class="fas fa-edit"></i> Edit Reservation</h3>
   
@@ -69,6 +69,6 @@
       </button>
     </div>
   
-    <!-- Display success or error message -->
+    
     <div *ngIf="message" class="message">{{ message }}</div>
 </div>

@@ -31,7 +31,7 @@ export class StaffQueriesComponent implements OnInit {
   }
 
   editQuery(query: any) {
-    this.selectedQuery = { ...query }; // Make a copy of the selected query
+    this.selectedQuery = { ...query }; 
     this.editMode = true;
   }
 
@@ -40,7 +40,7 @@ export class StaffQueriesComponent implements OnInit {
       .subscribe(
         (response: any) => {
           this.responseMessage = 'Query updated successfully!';
-          this.fetchQueries(); // Reload the list
+          this.fetchQueries(); 
           this.editMode = false;
           this.selectedQuery = null;
         },
@@ -56,7 +56,7 @@ export class StaffQueriesComponent implements OnInit {
       .subscribe(
         (response: any) => {
           this.responseMessage = 'Query deleted successfully!';
-          this.fetchQueries(); // Reload the list
+          this.fetchQueries(); 
         },
         (error) => {
           this.responseMessage = 'Error deleting query.';

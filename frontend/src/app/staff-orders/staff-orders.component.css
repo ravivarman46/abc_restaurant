@@ -1,4 +1,4 @@
-/* General Styles */
+
 .orders-container {
     background-color: #1e1e1e;
     color: #f5f5f5;
@@ -22,7 +22,7 @@
     animation: pulse 2s infinite ease-in-out;
   }
   
-  /* Animation for icons */
+  
   @keyframes pulse {
     0%, 100% {
       transform: scale(1);
@@ -32,7 +32,7 @@
     }
   }
   
-  /* Add New Order Section */
+  
   .add-order {
     background-color: #2a2a2a;
     padding: 20px;
@@ -79,7 +79,7 @@
     background-color: #e6b800;
   }
   
-  /* Orders List Section */
+  
   .orders-list {
     background-color: #2a2a2a;
     padding: 20px;
@@ -133,7 +133,7 @@
     color: #fff;
   }
   
-  /* Dark-themed scrollbar */
+  
   .orders-container::-webkit-scrollbar {
     width: 10px;
   }
@@ -147,7 +147,7 @@
     background-color: #1e1e1e;
   }
   
-  /* Fade-in animation for container */
+  
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -159,7 +159,7 @@
     }
   }
   
-  /* Media Queries */
+  
   @media (max-width: 768px) {
     .orders-container h1 {
       font-size: 2em;

@@ -7,17 +7,17 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./admin-reservation.component.css']
 })
 export class AdminReservationComponent implements OnInit {
-  reservations: any[] = [];          // Array to hold all reservations
-  selectedReservation: any = null;   // Hold the selected reservation for editing
-  message: string = '';              // Message for success or error display
+  reservations: any[] = [];          
+  selectedReservation: any = null;   
+  message: string = '';              
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.getAllReservations();  // Fetch all reservations when the component is initialized
+    this.getAllReservations();  
   }
 
-  // Fetch all reservations from the backend
+
   getAllReservations() {
     this.http.get('http://localhost:5000/reservations')
       .subscribe(
@@ -30,19 +30,19 @@ export class AdminReservationComponent implements OnInit {
       );
   }
 
-  // Select a reservation for editing
+ 
   editReservation(reservation: any) {
-    this.selectedReservation = { ...reservation };  // Make a copy of the selected reservation
+    this.selectedReservation = { ...reservation };  
   }
 
-  // Update an existing reservation
+ 
   updateReservation() {
     this.http.put(`http://localhost:5000/reservations/${this.selectedReservation.id}`, this.selectedReservation)
       .subscribe(
         (response: any) => {
           this.message = 'Reservation updated successfully!';
-          this.getAllReservations();  // Refresh reservations list
-          this.clearSelection();      // Clear selection after update
+          this.getAllReservations();  
+          this.clearSelection();      
         },
         (error) => {
           console.error('Error updating reservation:', error);
@@ -50,13 +50,13 @@ export class AdminReservationComponent implements OnInit {
       );
   }
 
-  // Delete a reservation
+  
   deleteReservation(reservationId: number) {
     this.http.delete(`http://localhost:5000/reservations/${reservationId}`)
       .subscribe(
         (response: any) => {
           this.message = 'Reservation deleted successfully!';
-          this.getAllReservations();  // Refresh reservations list
+          this.getAllReservations(); 
         },
         (error) => {
           console.error('Error deleting reservation:', error);
@@ -64,8 +64,8 @@ export class AdminReservationComponent implements OnInit {
       );
   }
 
-  // Clear the form and deselect reservation
+  
   clearSelection() {
-    this.selectedReservation = null;  // Deselect the reservation
+    this.selectedReservation = null;  
   }
 }

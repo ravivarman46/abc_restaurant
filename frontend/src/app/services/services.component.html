@@ -2,29 +2,28 @@
   <h2>Our Services</h2>
 
   <div class="services-grid">
-    <!-- Static Services -->
-    <!-- Service 1: Dine-In -->
+   
     <div class="service-card">
       <i class="fas fa-utensils service-icon"></i>
       <h3>Dine-In</h3>
       <p>Enjoy an elegant dining experience at our restaurant with a variety of dishes.</p>
     </div>
 
-    <!-- Service 2: Delivery -->
+  
     <div class="service-card">
       <i class="fas fa-truck service-icon"></i>
       <h3>Delivery</h3>
       <p>Get your favorite meals delivered to your doorstep with our quick and reliable service.</p>
     </div>
 
-    <!-- Service 3: Catering -->
+    
     <div class="service-card">
       <i class="fas fa-people-carry service-icon"></i>
       <h3>Catering</h3>
       <p>We provide professional catering services for events, parties, and corporate meetings.</p>
     </div>
 
-    <!-- Dynamically display customer services using *ngFor -->
+   
     <div *ngFor="let service of customerServices" class="service-card">
       <i [class]="service.iconClass + ' service-icon'"></i>
       <h3>{{ service.title }}</h3>

@@ -18,10 +18,10 @@ export class LoginComponent {
     if (form.valid) {
       this.loginService.login(form.value).subscribe({
         next: (response) => {
-          // Store user role in local storage or a service
+          
           localStorage.setItem('userRole', response.role);
 
-          // Redirect based on the role
+          
           switch (response.role) {
             case 'admin':
               this.router.navigate(['/admin']);

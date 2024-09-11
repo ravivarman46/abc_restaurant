@@ -22,7 +22,7 @@ export class StaffOrdersComponent implements OnInit {
     this.getAllOrders();
   }
 
-  // Fetch all orders
+  
   getAllOrders() {
     this.http.get('http://localhost:5000/orders')
       .subscribe((data: any) => {
@@ -32,7 +32,7 @@ export class StaffOrdersComponent implements OnInit {
       });
   }
 
-  // Add a new order
+ 
   addOrder() {
     if (!this.newOrder.customerName || !this.newOrder.orderDetails || this.newOrder.amount <= 0) {
       alert('Please fill all fields');
@@ -42,25 +42,25 @@ export class StaffOrdersComponent implements OnInit {
     this.http.post('http://localhost:5000/orders', this.newOrder)
       .subscribe(response => {
         alert('Order added successfully!');
-        this.getAllOrders();  // Refresh the list
+        this.getAllOrders();  
         this.newOrder = { customerName: '', orderDetails: '', amount: 0 };
       }, error => {
         console.error('Error adding order:', error);
       });
   }
 
-  // Edit an existing order
+  
   editOrder(order: any) {
     this.editMode = true;
     this.orderToEdit = { ...order };
   }
 
-  // Update the order
+ 
   updateOrder() {
     this.http.put(`http://localhost:5000/orders/${this.orderToEdit.id}`, this.orderToEdit)
       .subscribe(response => {
         alert('Order updated successfully!');
-        this.getAllOrders();  // Refresh the list
+        this.getAllOrders(); 
         this.editMode = false;
         this.orderToEdit = null;
       }, error => {
@@ -68,13 +68,13 @@ export class StaffOrdersComponent implements OnInit {
       });
   }
 
-  // Delete an order
+ 
   deleteOrder(orderId: number) {
     if (confirm('Are you sure you want to delete this order?')) {
       this.http.delete(`http://localhost:5000/orders/${orderId}`)
         .subscribe(response => {
           alert('Order deleted successfully!');
-          this.getAllOrders();  // Refresh the list
+          this.getAllOrders();  
         }, error => {
           console.error('Error deleting order:', error);
         });

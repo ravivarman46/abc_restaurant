@@ -1,12 +1,12 @@
 <div class="menu-container">
   <h1><i class="fas fa-utensils"></i> Customer Menu</h1>
 
-  <!-- Search Bar -->
+  
   <div class="search-bar">
     <input type="text" placeholder="Search menu items..." [(ngModel)]="searchTerm" (input)="filterMenu()">
   </div>
 
-  <!-- Country Filter -->
+  
   <div class="country-filters">
     <label *ngFor="let country of countries">
       <input type="radio" name="country" (click)="setCountry(country)" [checked]="selectedCountry === country" />
@@ -14,7 +14,7 @@
     </label>
   </div>
 
-  <!-- Menu items list -->
+  
   <div class="menu-items">
     <div class="menu-item" *ngFor="let item of filteredMenuItems">
       <img [src]="item.image" alt="Menu Item Image">
@@ -26,7 +26,7 @@
       </div>
     </div>
   </div>
-<!-- Cart Section -->
+
 <div class="cart-container">
   <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
   <div class="cart-items" *ngFor="let item of cart">

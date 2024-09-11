@@ -17,7 +17,7 @@ export class AdminQueriesComponent implements OnInit {
     this.getAllQueries();
   }
 
-  // Fetch all customer queries
+  
   getAllQueries() {
     this.http.get('http://localhost:5000/queries')
       .subscribe(
@@ -30,18 +30,18 @@ export class AdminQueriesComponent implements OnInit {
       );
   }
 
-  // Select a query for editing
+  
   editQuery(query: any) {
     this.selectedQuery = { ...query };
   }
 
-  // Update an existing query
+  
   updateQuery() {
     this.http.put(`http://localhost:5000/queries/${this.selectedQuery.id}`, this.selectedQuery)
       .subscribe(
         (response: any) => {
           this.message = 'Query updated successfully!';
-          this.getAllQueries(); // Refresh the query list
+          this.getAllQueries(); 
           this.clearSelection();
         },
         (error) => {
@@ -50,13 +50,13 @@ export class AdminQueriesComponent implements OnInit {
       );
   }
 
-  // Delete a query
+ 
   deleteQuery(queryId: number) {
     this.http.delete(`http://localhost:5000/queries/${queryId}`)
       .subscribe(
         (response: any) => {
           this.message = 'Query deleted successfully!';
-          this.getAllQueries(); // Refresh the query list
+          this.getAllQueries(); 
         },
         (error) => {
           console.error('Error deleting query:', error);
@@ -64,7 +64,7 @@ export class AdminQueriesComponent implements OnInit {
       );
   }
 
-  // Clear the selection
+  
   clearSelection() {
     this.selectedQuery = null;
   }

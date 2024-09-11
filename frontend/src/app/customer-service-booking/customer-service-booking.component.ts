@@ -43,14 +43,14 @@ export class CustomerServiceBookingComponent implements OnInit {
   constructor(private route: ActivatedRoute, private http: HttpClient) {}
 
   ngOnInit() {
-    // Get service id from the route parameters
+   
     this.route.params.subscribe(params => {
-      this.serviceId = +params['id']; // Convert id to a number
+      this.serviceId = +params['id']; 
       this.selectedService = this.customerServices.find(service => service.id === this.serviceId);
     });
   }
 
-  // Method to handle booking submission
+ 
   bookService() {
     const bookingData = {
       service: this.selectedService.title,

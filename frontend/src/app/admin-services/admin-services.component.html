@@ -1,10 +1,10 @@
 <div class="admin-container">
     <h1>Manage Services</h1>
   
-    <!-- Success/Error Message -->
+   
     <div *ngIf="message" class="message">{{ message }}</div>
   
-    <!-- List all services -->
+    
     <div *ngIf="services.length > 0">
       <table>
         <thead>
@@ -31,7 +31,7 @@
       </table>
     </div>
   
-    <!-- Add/Edit service form -->
+    
     <div *ngIf="selectedService" class="edit-form">
       <h2>Edit Service</h2>
       <form (ngSubmit)="updateService()">

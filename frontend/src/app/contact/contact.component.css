@@ -1,28 +1,28 @@
-/* Updated Contact Container Styling */
+
 .contact-container {
   width: 80%;
   margin: 0 auto;
   text-align: center;
-  background-color: #000000; /* Black background */
+  background-color: #000000;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Softer shadow */
-  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+  animation: fadeIn 1s ease-in-out; 
 }
 
-/* Restaurant Details Styling */
+
 .restaurant-details {
   margin: 20px 0;
-  color: #ffffff; /* White text */
+  color: #ffffff;
   font-size: 1.1rem;
-  font-family: 'Roboto', sans-serif; /* Matching font */
+  font-family: 'Roboto', sans-serif; 
 }
 
 .restaurant-details p {
   margin: 5px 0;
 }
 
-/* Animation for contact form container */
+
 @keyframes fadeIn {
   0% {
       opacity: 0;
@@ -34,7 +34,7 @@
   }
 }
 
-/* Updated Form Styling */
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -44,60 +44,60 @@
 .contact-form label {
   margin-top: 15px;
   font-size: 1.2rem;
-  color: #ffffff; /* White color for label text */
+  color: #ffffff; 
   text-align: left;
   width: 100%;
   max-width: 500px;
-  font-family: 'Roboto', sans-serif; /* Modern font */
+  font-family: 'Roboto', sans-serif; 
 }
 
-/* Input and textarea fields */
+
 .contact-form input, .contact-form textarea {
   width: 100%;
   max-width: 500px;
   padding: 15px;
   margin: 10px 0;
   border-radius: 8px;
-  border: 1px solid #333; /* Dark border */
-  background-color: #1e1e1e; /* Darker input background */
-  color: #ffffff; /* White input text color */
+  border: 1px solid #333; 
+  background-color: #1e1e1e; 
+  color: #ffffff; 
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif; /* Font matching the labels */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: box-shadow 0.3s, transform 0.2s; /* Add hover animation */
+  font-family: 'Roboto', sans-serif; 
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s, transform 0.2s; 
 }
 
-/* Hover effect for inputs */
+
 .contact-form input:focus, .contact-form textarea:focus {
-  box-shadow: 0 5px 15px rgba(30, 144, 255, 0.5); /* Blue shadow on focus */
-  transform: scale(1.02); /* Slightly larger on focus */
-  outline: none; /* Remove outline */
-  background-color: #333; /* Darker background on focus */
+  box-shadow: 0 5px 15px rgba(30, 144, 255, 0.5); 
+  transform: scale(1.02);
+  outline: none;
+  background-color: #333; 
 }
 
-/* Button Styling */
+
 .contact-form button {
   padding: 12px 25px;
   font-size: 1.1rem;
   border: none;
-  background-color: #007bff; /* Dark blue button */
+  background-color: #007bff; 
   color: white;
   border-radius: 25px;
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); 
   margin-top: 20px;
   font-family: 'Roboto', sans-serif;
 }
 
-/* Button Hover Effect */
+
 .contact-form button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: scale(1.1); /* Button grows slightly */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  background-color: #0056b3; 
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
 }
 
-/* Responsive design for smaller screens */
+
 @media (max-width: 768px) {
   .contact-container {
       width: 95%;

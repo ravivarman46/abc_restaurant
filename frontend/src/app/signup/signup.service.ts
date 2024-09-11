@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
     providedIn: 'root'
   })
   export class SignupService {
-      private apiUrl = 'http://localhost:5000/signup'; // Update the URL to your backend API
+      private apiUrl = 'http://localhost:5000/signup'; 
   
       constructor(private http: HttpClient) { }
     

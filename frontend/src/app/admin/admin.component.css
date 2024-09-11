@@ -1,6 +1,6 @@
-/* Admin page styling */
 
-/* Container styling for the admin page */
+
+
 .admin-container {
     padding: 50px;
     text-align: center;
@@ -13,7 +13,7 @@
     align-items: center;
   }
   
-  /* Header styling */
+ 
   .admin-container h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
@@ -21,7 +21,7 @@
     animation: fadeIn 1.5s ease-in-out;
   }
   
-  /* Admin grid layout */
+  
   .admin-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -29,7 +29,7 @@
     padding: 20px;
   }
   
-  /* Admin card styling */
+  
   .admin-card {
     background-color: #2e2e2e;
     padding: 20px;
@@ -44,7 +44,7 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
   }
   
-  /* Button styling */
+  
   .admin-btn {
     padding: 10px 20px;
     margin-top: 20px;
@@ -58,13 +58,13 @@
     transition: all 0.3s ease;
   }
   
-  /* Button hover effect */
+  
   .admin-btn:hover {
     background-color: #ff5733;
     transform: scale(1.05);
   }
   
-  /* Keyframe animations */
+ 
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -76,7 +76,7 @@
     }
   }
   
-  /* Responsive design */
+  
   @media (max-width: 768px) {
     .admin-grid {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

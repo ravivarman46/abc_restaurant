@@ -18,7 +18,7 @@
   animation: slideIn 1.2s ease-in-out;
 }
 
-/* Table styling */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -42,7 +42,7 @@ table th {
   font-weight: 600;
 }
 
-/* Button styling */
+
 .action-btn {
   padding: 8px 16px;
   border: none;
@@ -68,7 +68,7 @@ table th {
   background-color: #c0392b;
 }
 
-/* Edit form styling */
+
 .edit-form {
   margin-top: 20px;
   background-color: #222;
@@ -101,7 +101,7 @@ table th {
   outline: none;
 }
 
-/* Message styling */
+
 .message {
   margin-bottom: 20px;
   color: #ff6347;

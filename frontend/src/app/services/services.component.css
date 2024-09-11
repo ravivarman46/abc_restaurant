@@ -1,4 +1,4 @@
-/* General styles for both service types */
+
 .services-container {
   padding: 50px;
   text-align: center;
@@ -14,7 +14,7 @@
   animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Services grid layout */
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -22,7 +22,7 @@
   padding: 20px;
 }
 
-/* Service card styling */
+
 .service-card {
   background-color: #2e2e2e;
   padding: 20px;
@@ -39,7 +39,7 @@
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Icon styling */
+
 .service-icon {
   font-size: 3rem;
   color: #ff4500;
@@ -47,7 +47,7 @@
   animation: bounce 2s infinite ease-in-out;
 }
 
-/* Title and description styling */
+
 .service-card h3 {
   font-size: 1.5rem;
   margin: 10px 0;
@@ -58,7 +58,7 @@
   color: #d3d3d3;
 }
 
-/* Keyframes for animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;

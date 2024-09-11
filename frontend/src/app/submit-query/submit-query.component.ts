@@ -15,7 +15,7 @@ export class SubmitQueryComponent {
 
   constructor(private http: HttpClient) {}
 
-  // Method to handle query submission
+ 
   submitQuery() {
     const queryData = {
       name: this.name,
@@ -37,7 +37,7 @@ export class SubmitQueryComponent {
       );
   }
 
-  // Method to reset form after submission
+  
   resetForm() {
     this.name = '';
     this.email = '';

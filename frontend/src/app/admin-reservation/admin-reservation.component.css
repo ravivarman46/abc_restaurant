@@ -18,7 +18,7 @@ h1 {
   animation: slideDown 1s ease-in-out;
 }
 
-/* Table styling */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -63,7 +63,7 @@ table td button:hover {
   transform: scale(1.05);
 }
 
-/* Edit form */
+
 .edit-form {
   margin-top: 30px;
   padding: 20px;
@@ -121,7 +121,7 @@ table td button:hover {
   transform: scale(1.05);
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -166,7 +166,7 @@ table td button:hover {
   }
 }
 
-/* Cancel button specific styles */
+
 .cancel {
   background-color: #ff6347;
 }

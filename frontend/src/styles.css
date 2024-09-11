@@ -1,4 +1,4 @@
-/* Body styling */
+
 body {
   background-color: #121212;
   color: #e0e0e0;
@@ -11,7 +11,7 @@ body {
   background-image: url(/frontend/src/images/catring.jpg);
 }
 
-/* Scrollbar Customization */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -23,7 +23,7 @@ body {
   border-radius: 10px;
 }
 
-/* Navbar global styling */
+
 nav {
   background-color: #1f1f1f;
   padding: 10px 20px;
@@ -38,7 +38,7 @@ nav {
 }
 
 nav:hover {
-  background-color: #ff4500; /* Hover effect for navbar background */
+  background-color: #ff4500; 
 }
 
 nav a {
@@ -57,7 +57,7 @@ nav a i {
 }
 
 nav a:hover i {
-  transform: scale(1.2) rotate(10deg); /* Icon grows and rotates on hover */
+  transform: scale(1.2) rotate(10deg); 
 }
 
 nav a:hover {
@@ -66,7 +66,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Buttons globally */
+
 button {
   padding: 12px 24px;
   font-size: 1rem;
@@ -85,7 +85,7 @@ button:hover {
   animation: pulse 1.5s infinite;
 }
 
-/* Background animation */
+
 body::before {
   content: '';
   position: absolute;
@@ -109,7 +109,7 @@ body::before {
   }
 }
 
-/* New pulse animation for buttons */
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -125,7 +125,7 @@ body::before {
   }
 }
 
-/* Floating icon animation */
+
 .icon {
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -136,7 +136,7 @@ body::before {
   color: #ff4500;
 }
 
-/* Bounce animation for elements */
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
@@ -150,7 +150,7 @@ body::before {
   animation: bounce 2s infinite;
 }
 
-/* Footer global styling */
+
 footer {
   background-color: #1f1f1f;
   padding: 20px;
@@ -168,7 +168,7 @@ footer a:hover {
   color: #ff4500;
 }
 
-/* Gradient background animation */
+
 body {
   background: linear-gradient(-45deg, #121212, #1f1f1f, #333333, #000000);
   background-size: 400% 400%;

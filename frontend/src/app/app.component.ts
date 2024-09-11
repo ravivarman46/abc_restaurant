@@ -12,32 +12,32 @@ export class AppComponent {
   userRole: string | null = null;
 
   constructor(private authService: AuthService, private router: Router) {
-    this.userRole = this.authService.getUserRole(); // Get the current user role
+    this.userRole = this.authService.getUserRole(); 
   }
 
-  // Method to check if a user is logged in
+ 
   isLoggedIn(): boolean {
     return this.userRole !== null;
   }
 
-  // Method to check if the user is an Admin
+  
   isAdmin(): boolean {
     return this.userRole === 'admin';
   }
 
-  // Method to check if the user is a Staff member
+ 
   isStaff(): boolean {
     return this.userRole === 'staff';
   }
 
-  // Method to check if the user is a Customer
+  
   isCustomer(): boolean {
     return this.userRole === 'customer';
   }
 
-  // Logout functionality
+  
   logout() {
-    this.authService.logout();  // Clear user session
-    this.router.navigate(['/login']);  // Navigate to login page
+    this.authService.logout();  
+    this.router.navigate(['/login']);  
   }
 }

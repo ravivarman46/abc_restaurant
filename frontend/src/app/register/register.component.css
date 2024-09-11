@@ -1,10 +1,10 @@
-/* Container Styling for Register and Login */
+
 .login-container, .register-container {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.8); /* Dark theme with transparency */
+  background-color: rgba(0, 0, 0, 0.8); 
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   animation: fadeIn 1.5s ease-in-out;
@@ -13,7 +13,7 @@
 .login-form, .register-form {
   display: flex;
   flex-direction: column;
-  color: #ffffff; /* White text for better contrast */
+  color: #ffffff;
 }
 
 .form-group {
@@ -26,13 +26,13 @@
 .form-group label {
   margin-bottom: 10px;
   font-size: 1.2rem;
-  color: #ff8c00; /* Bright orange labels for contrast */
+  color: #ff8c00;
 }
 
 .form-group input,
 .form-group select {
   width: 100%;
-  padding: 12px 15px 12px 35px; /* Adjusted padding for better spacing with icons */
+  padding: 12px 15px 12px 35px; 
   background-color: #333;
   border: none;
   border-radius: 6px;
@@ -49,7 +49,7 @@
 
 .form-group select {
   appearance: none;
-  background-image: url('data:image/svg+xml;base64,<svg-icon-here>'); /* Optional: Custom arrow icon */
+  background-image: url('data:image/svg+xml;base64,<svg-icon-here>'); 
   background-repeat: no-repeat;
   background-position: right 15px center;
 }
@@ -86,14 +86,14 @@ a:hover {
   color: #00bfff;
 }
 
-/* Error Message Styling */
+
 .error-message {
   color: #ff4500;
   font-size: 1rem;
   margin-top: 10px;
 }
 
-/* Icon Styling */
+
 .form-group .icon {
   position: absolute;
   left: 10px;
@@ -106,20 +106,20 @@ a:hover {
 }
 
 .icon-email:before {
-  content: '\f0e0'; /* Font Awesome Email icon */
+  content: '\f0e0'; 
 }
 
 .icon-password:before {
-  content: '\f023'; /* Font Awesome Lock icon */
+  content: '\f023'; 
 }
 
-/* Form fields icon container */
+
 .form-group input[type="email"],
 .form-group input[type="password"] {
-  padding-left: 40px; /* Space for icons */
+  padding-left: 40px; 
 }
 
-/* Animation */
+
 @keyframes fadeIn {
   from {
     opacity: 0;

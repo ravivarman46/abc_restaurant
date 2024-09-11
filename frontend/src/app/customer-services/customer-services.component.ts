@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class CustomerServicesComponent {
   searchQuery: string = '';
 
-  // Array of 20 services with updated names
+  
   customerServices = [
     { title: 'Concierge Service', description: 'Our dedicated concierge is here to assist you 24/7.', iconClass: 'fas fa-concierge-bell', id: 1 },
     { title: 'Help & Support', description: 'Reach out for any assistance you need during your stay.', iconClass: 'fas fa-hands-helping', id: 2 },
@@ -37,7 +37,7 @@ export class CustomerServicesComponent {
 
   constructor(private router: Router) {}
 
-  // Method to filter customer services based on search input
+  
   filterCustomerServices() {
     this.filteredCustomerServices = this.customerServices.filter(service => 
       service.title.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
@@ -45,8 +45,8 @@ export class CustomerServicesComponent {
     );
   }
 
-  // Redirect to customer service booking page
+  
   goToCustomerServiceDetails(service: any) {
-    this.router.navigate(['/customer-service-booking', service.id]);  // Navigate with service ID
+    this.router.navigate(['/customer-service-booking', service.id]);  
   }
 }

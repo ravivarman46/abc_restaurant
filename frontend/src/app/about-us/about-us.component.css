@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/* About Us Container */
+
 .aboutus-container {
   background: #121212;
   color: #ffffff;
@@ -15,7 +15,7 @@
   animation: fadeIn 2s ease-in-out;
 }
 
-/* Header styling */
+
 .header h1 {
   font-size: 3rem;
   letter-spacing: 3px;
@@ -41,7 +41,7 @@
   animation: fadeIn 2s ease-in-out;
 }
 
-/* Content styling */
+
 .content p {
   font-size: 1.2rem;
   line-height: 1.8;
@@ -51,7 +51,7 @@
   animation: slideUp 1.5s ease-out;
 }
 
-/* Team Section */
+
 .team-section {
   margin-top: 50px;
 }
@@ -66,7 +66,7 @@
   justify-content: center;
 }
 
-/* Team Cards */
+
 .team-cards {
   display: flex;
   justify-content: center;
@@ -84,7 +84,7 @@
   animation: cardAppear 1.5s ease-out;
 }
 
-/* Icon Container Styling */
+
 .icon-container {
   width: 70px;
   height: 70px;
@@ -100,7 +100,7 @@
   transition: transform 0.3s, box-shadow 0.3s ease;
 }
 
-/* Icon Hover Effect */
+
 .team-card:hover .icon-container {
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);

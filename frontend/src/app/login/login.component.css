@@ -1,4 +1,4 @@
-/* Login Container */
+
 .login-container {
   display: flex;
   justify-content: center;
@@ -7,10 +7,10 @@
   background: url('/assets/images1.jpg') no-repeat center center;
   background-size: cover;
   background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  background-color: rgba(0, 0, 0, 0.6); 
 }
 
-/* Form Styling */
+
 .login-form {
   background-color: #1b1b1b;
   padding: 40px;
@@ -22,7 +22,7 @@
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Form Title */
+
 .login-form h2 {
   color: #ff4500;
   margin-bottom: 20px;
@@ -31,7 +31,7 @@
   letter-spacing: 1px;
 }
 
-/* Form Group */
+
 .form-group {
   margin-bottom: 20px;
   text-align: left;
@@ -62,7 +62,7 @@
   border-color: #ff4500;
 }
 
-/* Button Styling */
+
 button {
   width: 100%;
   padding: 15px;
@@ -82,13 +82,13 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Disabled button styling */
+
 button[disabled] {
   background-color: #777;
   cursor: not-allowed;
 }
 
-/* Links */
+
 .login-form a {
   display: block;
   margin-top: 20px;
@@ -102,7 +102,7 @@ button[disabled] {
   color: #ff7043;
 }
 
-/* Form Icons */
+
 .login-form i {
   margin-right: 10px;
   color: #ff4500;
@@ -126,7 +126,7 @@ button[disabled] {
   color: #ff7043;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

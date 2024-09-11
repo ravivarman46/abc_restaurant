@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AuthService } from './auth.service'; // Import AuthService // Import FormsModule and ReactiveFormsModule
+import { AuthService } from './auth.service'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -69,8 +69,8 @@ import { SignupComponent } from './signup/signup.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,           // Add FormsModule here
-    ReactiveFormsModule     // Add ReactiveFormsModule here if needed for complex forms
+    FormsModule,          
+    ReactiveFormsModule     
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

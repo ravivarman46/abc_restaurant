@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-staff-queries',
-  templateUrl: './staff-queries.component.html',
+  templateUrl:'./staff-queries.component.html',
   styleUrls: ['./staff-queries.component.css']
 })
 export class StaffQueriesComponent implements OnInit {

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-staff-reservations',
-  templateUrl: './staff-reservations.component.html',
+  templateUrl:'./staff-reservations.component.html',
   styleUrls: ['./staff-reservations.component.css']
 })
 export class StaffReservationsComponent implements OnInit {

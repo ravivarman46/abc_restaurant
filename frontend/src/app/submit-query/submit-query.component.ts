@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-submit-query',
-  templateUrl: './submit-query.component.html',
+  templateUrl:'./submit-query.component.html',
   styleUrls: ['./submit-query.component.css']
 })
 export class SubmitQueryComponent {

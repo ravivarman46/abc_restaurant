@@ -28,6 +28,11 @@ import { StaffOrdersComponent } from './staff-orders/staff-orders.component';
 
 import { AuthGuard } from './auth.guard'; 
 import { SignupComponent } from './signup/signup.component';
+import { NavComponent } from './nav/nav.component';
+import { LandingComponent } from './landing/landing.component';
+import { AdminNavComponent } from './nav/admin-nav/admin-nav.component';
+import { StaffNavComponent } from './nav/staff-nav/staff-nav.component';
+import { CusNavComponent } from './nav/cus-nav/cus-nav.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -56,6 +61,11 @@ const routes: Routes = [
   { path: 'staff-queries', component: StaffQueriesComponent },
   { path: 'staff-orders', component: StaffOrdersComponent },
   {path: 'signup', component: SignupComponent},
+  {path: 'nav', component: NavComponent},
+  {path: 'landing', component: LandingComponent},
+  {path: 'admin-nav', component: AdminNavComponent},
+  {path: 'cus-nav', component: CusNavComponent},
+  {path: 'staff-nav', component: StaffComponent}
   
 ];
 @NgModule({

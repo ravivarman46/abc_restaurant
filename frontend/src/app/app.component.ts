@@ -8,36 +8,36 @@ import { AuthService } from './auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ABC Restaurant';
-  userRole: string | null = null;
+  // title = 'ABC Restaurant';
+  // userRole: string | null = null;
 
-  constructor(private authService: AuthService, private router: Router) {
-    this.userRole = this.authService.getUserRole(); 
-  }
-
- 
-  isLoggedIn(): boolean {
-    return this.userRole !== null;
-  }
-
-  
-  isAdmin(): boolean {
-    return this.userRole === 'admin';
-  }
+  // constructor(private authService: AuthService, private router: Router) {
+  //   this.userRole = this.authService.getUserRole(); 
+  // }
 
  
-  isStaff(): boolean {
-    return this.userRole === 'staff';
-  }
+  // isLoggedIn(): boolean {
+  //   return this.userRole !== null;
+  // }
 
   
-  isCustomer(): boolean {
-    return this.userRole === 'customer';
-  }
+  // isAdmin(): boolean {
+  //   return this.userRole === 'admin';
+  // }
+
+ 
+  // isStaff(): boolean {
+  //   return this.userRole === 'staff';
+  // }
 
   
-  logout() {
-    this.authService.logout();  
-    this.router.navigate(['/login']);  
-  }
+  // isCustomer(): boolean {
+  //   return this.userRole === 'customer';
+  // }
+
+  
+  // logout() {
+  //   this.authService.logout();  
+  //   this.router.navigate(['/login']);  
+  // }
 }

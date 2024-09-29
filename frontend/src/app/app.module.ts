@@ -33,6 +33,11 @@ import { StaffQueriesComponent } from './staff-queries/staff-queries.component';
 import { StaffOrdersComponent } from './staff-orders/staff-orders.component';
 import { RatesAvailabilityComponent } from './rates-availability/rates-availability.component';
 import { SignupComponent } from './signup/signup.component';
+import { NavComponent } from './nav/nav.component';
+import { CusNavComponent } from './nav/cus-nav/cus-nav.component';
+import { LandingComponent } from './landing/landing.component';
+import { AdminNavComponent } from './nav/admin-nav/admin-nav.component';
+import { StaffNavComponent } from './nav/staff-nav/staff-nav.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +68,13 @@ import { SignupComponent } from './signup/signup.component';
     StaffQueriesComponent,
     StaffOrdersComponent,
     RatesAvailabilityComponent,
-    SignupComponent
+    SignupComponent,
+    NavComponent,
+    CusNavComponent,
+    LandingComponent,
+    AdminNavComponent,
+    StaffNavComponent,
+    
   ],
   imports: [
     BrowserModule,
